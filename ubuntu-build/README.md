@@ -4,7 +4,7 @@
 
 It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Vault on Ubuntu, both required for farming on SAFE Network.
 
-For more information see the main [README.md](../README.md)
+For more information see the main [README.md]([../README.md](https://github.com/theWebalyst/safenetwork-farming#safe-network-test-farming))
 ## Operating Systems
 The scripts in this sub-directory have been tested on clean installs of Ubuntu 16.04 LTS and 18.04 LTS, and will probably work for later versions. 
 
@@ -89,7 +89,7 @@ The CLI may run, but will be unable to connect with the SAFE Network testnet if 
 
 ### Getting Help
 
-If you think a script is failing due to a bug create an issue [here](https://github.com/theWebalyst/safenetwork-farming).
+If you think a script is failing due to a bug create an issue [here](https://github.com/theWebalyst/safenetwork-farming/issues).
 
 If you have a working `safe --help` command, the best place to get help is on the SAFE Network forum, where you can also check the status of the test network. See next. 
 

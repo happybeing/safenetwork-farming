@@ -11,7 +11,7 @@ NOTE: For now, **farming** refers to **test farming** though scripts are made re
 ### Regular Farmers
 If you want to farm on a regular computer this is probably not for you, because the easiest way to get farming will be to download the SAFE Network App which will install and set everything up for you on Windows, Mac and Linux.
 
-That official installer is not quite ready yet, but if you are impatient and a little more abitious you can get going early by downloading and installing the vault software from [github.com/maidsafe/safe-vault/releases](https://github.com/maidsafe/safe-vault/releases). There's plenty of help available on the forum, so anyone can try this out.
+That official installer is not quite ready yet, but if you are impatient and a little more abitious you can get going early by downloading and installing the SAFE CLI (instructions [here](https://github.com/maidsafe/safe-api/tree/master/safe-cli#download)) and then use the CLI to install the Vault (instructions [here](https://github.com/maidsafe/safe-api/tree/master/safe-cli#vault-install)). There's plenty of help available on the forum, so anyone can try this out.
 
 ### Atypical Farmers
 This repository is for those wanting to start early with the test networks, farm on unusual hardware, or who want to build everything from source code for other reasons.
