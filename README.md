@@ -2,22 +2,45 @@
 
 This repository is for information and resources such as scripts to set-up and manage farming on the SAFE Network. Most people won't need this, see [Who is this for?](#who-is-this-for) to see if it is for you.
 
-More background below: [About SAFE Network and Farming](#about-safe-network-and-farming)
+See [About SAFE Network and Farming](#about-safe-network-and-farming) for more information.
 
 NOTE: For now, **farming** refers to **test farming** though scripts are made ready for when SAFE Network is launched and *real* farming can begin.
 
 ## Who is this for?
 
-## Regular Farmers
-If you want to farm on a regular computer the easiest way to get farming will be to download the SAFE Network App which will install and set everything up for you on Windows, Mac and Linux.
+### Regular Farmers
+If you want to farm on a regular computer this is probably not for you, because the easiest way to get farming will be to download the SAFE Network App which will install and set everything up for you on Windows, Mac and Linux.
 
-That official installer is not quite ready yet, but if you are little more abitions you can still get going early by downloading and installing the vault software from [github.com/maidsafe/safe-vault/releases](https://github.com/maidsafe/safe-vault/releases). There's plenty of help available on the forum, so anyone can try this out.
+That official installer is not quite ready yet, but if you are impatient and a little more abitious you can get going early by downloading and installing the vault software from [github.com/maidsafe/safe-vault/releases](https://github.com/maidsafe/safe-vault/releases). There's plenty of help available on the forum, so anyone can try this out.
 
 ### Atypical Farmers
 This repository is for those wanting to start early with the test networks, farm on unusual hardware, or who want to build everything from source code for other reasons.
 
-## How to Contribute
-If you have something to add to to the help here, please open an issue or submit a pull request (but first see [Contributions](#contributions) below)
+### Contributors
+If you have something that would add to what is available here, please open an issue or submit a pull request (but first see [Contributions](#contributions) below)
+
+## How to Begin Farming
+Install `git` on the computer you intend to use for farming.
+
+Choose your operating system / platform from those listed below.
+
+Use `git` (or `degit`) to make a copy of this repository on your computer. For example:
+```bash
+git clone https://github.com/theWebalyst/safenetwork-farming
+```
+Change directory into the sub-directory most relevant to your operatating system. So on a Ubuntu system, type:
+
+```bash
+cd safenetwork-farming/ubuntu-build
+```
+
+Follow the instructions relevant to that sub-directory (in the README.md file next to the scripts).
+
+## Scripts Available
+
+Below is list of the script sub-directories and what they contain.
+
+**./ubuntu-build** to build SAFE CLI and SAFE Vault on Ubuntu. These have been tested on clean installs of Ubuntu 16.04 LTS and 18.04 LTS, and will probably work for later versions. They should also work for any processor architecture supported by the Rustc compiler, but they were created and tested on the Odroid-U3 single board computer which uses an ARMv7 compatible processor. See [./ubuntu-build/README.md](./ubuntu-build/README.md)
 
 ## About SAFE Network and Farming
 **SAFE Network** is a decentralised communications, storage and application platform like no other, providing Secure Access For Everyone with privacy, security and freedom built in from the bottom up.
@@ -41,7 +64,7 @@ These are some of the best starting points if you want to read:
 - Fundamentals of SAFE Network: [part1](https://safenetforum.org/t/founding-fundamentals-part-1/28615?u=happybeing) and [part2](https://safenetforum.org/t/founding-fundamentals-part-2/28614?u=happybeing)
 - Technology Primer: [primer.safenetwork.org](https://primer.safenetwork.org)
 
-## Farming Scripts (for Atypical Farmers)
+## About Farming Scripts (for Atypical Farmers)
 
 The scripts here focus on non-typical setups such as deployment in the cloud or build scripts that will work on unusual devices which need you to compile the vault from source.
 
@@ -62,7 +85,7 @@ The main reason to build yourself is if there isn't a pre-built version for your
 So in most cases there is no need to build, because you can install directly from the Maidsafe repositories or SAFE Network website as already explained.
 
 
-## Build Scripts
+### Typical Build Scripts
 After running `setup.sh`, it should be possible to run the other scripts without running it again and everything will just [cough] work.
 
 An example structure within each subdirectory is as follows:
@@ -75,30 +98,6 @@ An example structure within each subdirectory is as follows:
 **Customisation:** If a user wishes to modify the default locations for anything, this should be possible just by editing `setup.sh`.
 
 **New Scripts:** To create a new set of scripts I suggest you make a copy of [./ubuntu-build/](./ubuntu-build) and use it as a template
-
-
-## How to Begin Farming
-Install `git` on the computer you intend to use for farming.
-
-Choose your operating system / platform from those listed below.
-
-Use `git` (or `degit`) to make a copy of this repository on your computer. For example:
-```bash
-git clone https://github.com/theWebalyst/safenetwork-farming
-```
-Change directory into the sub-directory most relevant to your operatating system. So on a Ubuntu system, type:
-
-```bash
-cd safenetwork-farming/ubuntu-build
-```
-
-Follow the instructions relevant to that sub-directory (in the README.md file next to the scripts).
-
-### Scripts Available
-
-Below is list of the script sub-directories and what they contain.
-
-**./ubuntu-build** to build SAFE CLI and SAFE Vault on Ubuntu. These have been tested on clean installs of Ubuntu 16.04 LTS and 18.04 LTS, and will probably work for later versions. They should also work for any processor architecture supported by the Rustc compiler, but they were created and tested on the Odroid-U3 single board computer which uses an ARMv7 compatible processor. See [./ubuntu-build/README.md](./ubuntu-build/README.md)
 
 
 # Contributions
