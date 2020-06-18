@@ -18,5 +18,5 @@ git clone https://github.com/maidsafe/safe-api
 git clone https://github.com/maidsafe/safe-vault
 
 # Set up alias and save to .bashrc
-echo alias safe='$SAFE_CLI' >> ~/.bashrc
-alias safe='$SAFE_CLI'
+echo alias safe="$SAFE_CLI" >> ~/.bashrc
+alias safe="$SAFE_CLI"

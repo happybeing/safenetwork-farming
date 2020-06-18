@@ -17,7 +17,9 @@ The scripts should work on any processor architecture supported by the Rustc com
 - `build.sh` builds and installs the SAFE CLI and SAFE Vault. Both are needed to farm.
 - `test-auth.sh` uses the SAFE CLI to select a network and create a user account. This can be used to verify that the SAFE CLI has been built and installed correctly.
 - `test-vault.sh` uses the SAFE CLI to select the network and start the vault ready to begin farming.  This can be used to verify that the Vault has been built and installed correctly.
-- 
+- `setup-env.sh` is used by the other scripts to determine the locations of the build and deployment directories.
+- `test-env.sh` shows the environment created by `setup-env.sh`
+ 
 ## How to Build The SAFE Network Software
 
 This assumes you have made a copy of the containing folder on your computer and are using the command line to run the scripts from within the scripts directory.
@@ -25,7 +27,6 @@ This assumes you have made a copy of the containing folder on your computer and 
 ## Setup (once only)
 After installing make all the scripts executable, and run `setup.sh`:
 ```
-chmod +x *.sh
 ./setup.sh
 ```
 The above will prompt you for your 'sudo' password so that it can update your packages and install dependencies.
