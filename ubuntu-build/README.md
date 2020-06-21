@@ -52,6 +52,20 @@ The script automatically pulls the latest code from Maidsafe and updates any dep
 
 How long it takes is very dependent on your hardware, but it isn't excessive even on a single board computer such as the Odroid-U3+.
 
+## Know Build Problems
+
+- The Cargo Lock File Error Message:
+  ```
+  error: failed to parse lock file at: /home/<some-path>/safenetwork-farming/ubuntu-build/safe-vault/Cargo.lock
+
+  Caused by:
+  invalid serialized PackageId for key package.dependencies
+  ```
+  The above error is caused when using an incompatible version of Cargo, the Rust package manager and can be fixed by updating your Rust installation with:
+  ```
+  rustup update
+  ```
+
 ## Testing your Build
 If the build appears to complete without errors... you did check the console output didn't you ;-) there are two scripts provided to test if everthing was successful.
 
