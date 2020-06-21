@@ -1,16 +1,18 @@
 # Scripts to Build on Ubuntu
 
-**./ubuntu-build**  is part of the SAFE Network Farming repository.
+**./ubuntu-build**  is part of the SAFE Network Farming repository and contains scripts for building on Ubuntu and Debian Linux distributions.
 
-It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Vault on Ubuntu, both required for farming on SAFE Network.
+It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Vault, both required for farming on SAFE Network.
 
 For more information see the main [README.md](https://github.com/theWebalyst/safenetwork-farming#safe-network-test-farming).
 
-## Operating Systems
-The scripts in this sub-directory have been tested on clean installs of Ubuntu 16.04 LTS and 18.04 LTS, and will probably work for later versions. 
-
-## Processor Hardware
-The scripts should work on any processor architecture supported by the Rustc compiler, but they were created and tested on the Odroid-U3 single board computer which uses an ARMv7 compatible processor.
+## Operating Systems and Processor Architectures
+**./ubuntu-build** contains scripts to build SAFE CLI and SAFE Vault have been tested and found to work for:
+  
+  - **Ubuntu** 16.04 LTS and 18.04 LTS on Odroid U3+ (ARM v7 architecture)
+  - **Debian** 10.04 (Buster) on Raspbery Pi 4 (ARM v8 architecture) 
+  
+  They should also work for any processor architecture supported by the Rustc compiler.
 
 ## Scripts provided
 

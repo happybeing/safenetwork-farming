@@ -40,7 +40,12 @@ Follow the instructions relevant to that sub-directory (in the README.md file ne
 
 Below is list of the script sub-directories and what they contain.
 
-**./ubuntu-build** to build SAFE CLI and SAFE Vault on Ubuntu. These have been tested on clean installs of Ubuntu 16.04 LTS and 18.04 LTS, and will probably work for later versions. They should also work for any processor architecture supported by the Rustc compiler, but they were created and tested on the Odroid-U3 single board computer which uses an ARMv7 compatible processor. See [./ubuntu-build/README.md](./ubuntu-build/README.md)
+**./ubuntu-build** contains scripts to build SAFE CLI and SAFE Vault have been tested and found to work for:
+  
+  - **Ubuntu** 16.04 LTS and 18.04 LTS on Odroid U3+ (ARM v7 architecture)
+  - **Debian** 10.04 (Buster) on Raspbery Pi 4 (ARM v8 architecture) 
+  
+  They should also work for any processor architecture supported by the Rustc compiler. See [./ubuntu-build/README.md](./ubuntu-build/README.md)
 
 ## About SAFE Network and Farming
 **SAFE Network** is a decentralised communications, storage and application platform like no other, providing Secure Access For Everyone with privacy, security and freedom built in from the bottom up.
