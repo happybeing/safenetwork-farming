@@ -5,16 +5,16 @@ set -x
 # Build SAFE CLI on Odroid-U3+, Ubuntu 16.04 LTS / 18.04 LTS
 source $HOME/.cargo/env # If not rebooted since installing Rustc
 
-cd $SAFE_SCRIPTS_DIR/safe-api
+cd $SAFE_SCRIPTS_DIR/sn_api
 git pull
 time cargo update
 time cargo build --release # Took 74 mins
 
-# Copy safe CLI into place
+# Copy Safe CLI into place
 mkdir -p $SAFE_CLI_DIR
-
 cp $SAFE_CLI_BUILD $SAFE_CLI_DIR
-# Copy safe-authd into place
+
+# Copy Safe Authd into place
 mkdir -p $SAFE_AUTH_DIR
 cp $SAFE_AUTHD_BUILD $SAFE_AUTH_DIR
 
@@ -26,13 +26,13 @@ $SAFE_CLI networks switch shared-section
 $SAFE_CLI networks check
 # Should be ok now!
 
-# Build SAFE Vault:  on Odroid-U3+, Ubuntu 16.04 LTS / 18.04 LTS
+# Build SAFE node:  on Odroid-U3+, Ubuntu 16.04 LTS / 18.04 LTS
 source $HOME/.cargo/env # If not rebooted since installing Rustc
-cd $SAFE_SCRIPTS_DIR/safe-vault
+cd $SAFE_SCRIPTS_DIR/sn_node
 git pull
 time cargo update # <10 mins
 time cargo build --release # 56mins
 
-# Copy safe_vault into place
-mkdir -p $SAFE_VAULT_DIR
-cp $SAFE_VAULT_BUILD $SAFE_VAULT_DIR
+# Copy Safe Node into place
+mkdir -p $SAFE_NODE_DIR
+cp $SAFE_NODE_BUILD $SAFE_NODE_DIR

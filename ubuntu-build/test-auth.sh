@@ -6,5 +6,6 @@ set -x
 safe networks check
 safe networks switch shared-section
 safe auth start
-safe auth create-acc --test-coins # Trying with sharedfleminghomevaults
+safe auth create --test-coins # Trying with sharedfleminghomevaults
+safe auth unlock --self-auth
 
