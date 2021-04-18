@@ -18,5 +18,6 @@ git clone https://github.com/maidsafe/sn_api
 git clone https://github.com/maidsafe/sn_node
 
 # Set up alias and save to .bashrc
+echo "" >> ~/.bashrc
 echo alias safe="$SAFE_CLI" >> ~/.bashrc
 alias safe="$SAFE_CLI"

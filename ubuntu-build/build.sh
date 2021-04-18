@@ -18,11 +18,11 @@ cp $SAFE_CLI_BUILD $SAFE_CLI_DIR
 mkdir -p $SAFE_AUTH_DIR
 cp $SAFE_AUTHD_BUILD $SAFE_AUTH_DIR
 
-# Select the network (e.g. shared-section)
+# Select the network (e.g. fleming-testnet)
 $SAFE_CLI networks check
 # If the above complains, add a network config and select it:
 safe networks add fleming-testnet https://sn-node.s3.eu-west-2.amazonaws.com/config/node_connection_info.config
-$SAFE_CLI networks switch shared-section
+$SAFE_CLI networks switch fleming-testnet
 $SAFE_CLI networks check
 # Should be ok now!
 
