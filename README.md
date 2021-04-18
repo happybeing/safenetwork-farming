@@ -26,7 +26,7 @@ Choose your operating system / platform from those listed below.
 
 Use `git` (or `degit`) to make a copy of this repository on your computer. For example:
 ```bash
-git clone https://github.com/theWebalyst/safenetwork-farming
+git clone https://github.com/happybeing/safenetwork-farming
 ```
 Change directory into the sub-directory most relevant to your operatating system. So on a Ubuntu system, type:
 

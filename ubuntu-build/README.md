@@ -4,7 +4,7 @@
 
 It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Vault, both required for farming on SAFE Network.
 
-For more information see the main [README.md](https://github.com/theWebalyst/safenetwork-farming#safe-network-test-farming).
+For more information see the main [README.md](https://github.com/happybeing/safenetwork-farming#safe-network-test-farming).
 
 ## Operating Systems and Processor Architectures
 **./ubuntu-build** contains scripts to build SAFE CLI and SAFE Vault have been tested and found to work for:
@@ -106,7 +106,7 @@ The CLI may run, but will be unable to connect with the SAFE Network testnet if 
 
 ### Getting Help
 
-If you think a script is failing due to a bug create an issue [here](https://github.com/theWebalyst/safenetwork-farming/issues).
+If you think a script is failing due to a bug create an issue [here](https://github.com/happybeing/safenetwork-farming/issues).
 
 If you have a working `safe --help` command, the best place to get help is on the SAFE Network forum, where you can also check the status of the test network. See next. 
 
