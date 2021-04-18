@@ -2,27 +2,27 @@
 
 **./ubuntu-build**  is part of the SAFE Network Farming repository and contains scripts for building on Ubuntu and Raspbian Linux distributions.
 
-It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Vault, both required for farming on SAFE Network.
+It contains scripts (without warranty or liability) which can be used build SAFE CLI and SAFE Node, both required for farming on SAFE Network.
 
 For more information see the main [README.md](https://github.com/happybeing/safenetwork-farming#safe-network-test-farming).
 
 ## Operating Systems and Processor Architectures
-**./ubuntu-build** contains scripts to build SAFE CLI and SAFE Vault have been tested and found to work for:
-  
+**./ubuntu-build** contains scripts to build SAFE CLI and SAFE Node have been tested and found to work for:
+
   - **Ubuntu** 16.04 LTS and 18.04 LTS on Odroid U3+ (ARM v7 architecture)
-  - **Raspbian** 10.04 (Buster) on Raspberry Pi 4 (ARM v8 architecture) 
-  
+  - **Raspbian** 10.04 (Buster) on Raspberry Pi 4 (ARM v8 architecture)
+
   There's a good change these scripts will work on **Debian**, and for any processor architecture supported by the Rustc compiler.
 
 ## Scripts provided
 
 - `setup.sh` creates necessary directories, command aliases and environment variables needed by the other scripts. It is intended only to be run once as running it multiple times will repeatedly add things to your `.bashrc` file.
-- `build.sh` builds and installs the SAFE CLI and SAFE Vault. Both are needed to farm.
+- `build.sh` builds and installs the SAFE CLI and SAFE Node. Both are needed to farm.
 - `test-auth.sh` uses the SAFE CLI to select a network and create a user account. This can be used to verify that the SAFE CLI has been built and installed correctly.
-- `test-vault.sh` uses the SAFE CLI to select the network and start the vault ready to begin farming.  This can be used to verify that the Vault has been built and installed correctly.
+- `test-node.sh` uses the SAFE CLI to select the network and start the node ready to begin farming.  This can be used to verify that the Node has been built and installed correctly.
 - `setup-env.sh` is used by the other scripts to determine the locations of the build and deployment directories.
 - `test-env.sh` shows the environment created by `setup-env.sh`
- 
+
 ## How to Build The SAFE Network Software
 
 This assumes you have made a copy of the containing folder on your computer and are using the command line to run the scripts from within the scripts directory.
@@ -56,7 +56,7 @@ How long it takes is very dependent on your hardware, but it isn't excessive eve
 
 - The Cargo Lock File Error Message:
   ```
-  error: failed to parse lock file at: /home/<some-path>/safenetwork-farming/ubuntu-build/safe-vault/Cargo.lock
+  error: failed to parse lock file at: /home/<some-path>/safenetwork-farming/ubuntu-build/safe-node/Cargo.lock
 
   Caused by:
   invalid serialized PackageId for key package.dependencies
@@ -85,10 +85,10 @@ ls -l ./safe-api/target/release/safe
 
 If it has built, try adding an alias for the path to the 'safe' executable in your ~/.bashrc file.
 
-### Vault Test
-Test the SAFE Vault and begin farming:
+### Node Test
+Test the SAFE Node and begin farming:
 ```
-./test-vault.sh
+./test-node.sh
 ```
 
 ### Authenticator Test
@@ -108,9 +108,9 @@ The CLI may run, but will be unable to connect with the SAFE Network testnet if 
 
 If you think a script is failing due to a bug create an issue [here](https://github.com/happybeing/safenetwork-farming/issues).
 
-If you have a working `safe --help` command, the best place to get help is on the SAFE Network forum, where you can also check the status of the test network. See next. 
+If you have a working `safe --help` command, the best place to get help is on the SAFE Network forum, where you can also check the status of the test network. See next.
 
 ### Using the SAFE Command Line (CLI)
-- [SAFE CLI User Guide](https://github.com/maidsafe/safe-api/tree/master/safe-cli#safe-cli)
-- [SAFE Network Testnet - Vaults from home with IGD](https://safenetforum.org/t/status-offline-safe-network-testnet-vaults-from-home-with-igd/31899?u=happybeing) shows the status of the current testnet (in the title)
-- [Baby Fleming Shared Section](https://safenetforum.org/t/baby-fleming-public-shared-section/31377?u=happybeing) has instructions for joining a 'shared section' public test network. Also check the latest [Development Releases](https://safenetforum.org/c/development/releases/76) and [Development Update](https://safenetforum.org/c/development/updates/19)
+- [Safe Network CLI User Guide](https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#safe-network-cli)
+- [Safe Network Node Install](https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#node-install)
+- [Safe Fleming Testnets](https://safenetforum.org/search?q=%22Fleming%20Testnet%22) shows the status of the each testnet (in the title). Also check the latest [Development Releases](https://safenetforum.org/c/development/releases/76) and [Development Update](https://safenetforum.org/c/development/updates/19)

@@ -21,7 +21,7 @@ cp $SAFE_AUTHD_BUILD $SAFE_AUTH_DIR
 # Select the network (e.g. shared-section)
 $SAFE_CLI networks check
 # If the above complains, add a network config and select it:
-$SAFE_CLI networks add shared-section https://safe-vault-config.s3.eu-west-2.amazonaws.com/shared-section/vault_connection_info.config
+safe networks add fleming-testnet https://sn-node.s3.eu-west-2.amazonaws.com/config/node_connection_info.config
 $SAFE_CLI networks switch shared-section
 $SAFE_CLI networks check
 # Should be ok now!
