@@ -14,8 +14,8 @@ curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env # If not rebooted since installing Rustc
 
 # Clone the SAFE github repositories
-git clone https://github.com/maidsafe/sn_api
-git clone https://github.com/maidsafe/sn_node
+git clone --depth 1 https://github.com/maidsafe/sn_api
+git clone --depth 1 https://github.com/maidsafe/sn_node
 
 # Set up alias and save to .bashrc
 echo "" >> ~/.bashrc
