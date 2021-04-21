@@ -8,9 +8,9 @@ source $HOME/.cargo/env # If not rebooted since installing Rustc
 rm -rf $HOME/.safe
 
 cd $SAFE_SCRIPTS_DIR/sn_api
+git checkout . -f
 git pull
-time cargo update
-time cargo build --release # ?? mins (Fleming T?)
+time cargo build --release
 
 # Copy Safe CLI into place
 mkdir -p $SAFE_CLI_DIR
@@ -29,9 +29,9 @@ $SAFE_CLI networks check
 # Build SAFE node:  on Odroid-U3+, Ubuntu 16.04 LTS / 18.04 LTS
 source $HOME/.cargo/env # If not rebooted since installing Rustc
 cd $SAFE_SCRIPTS_DIR/sn_node
+git checkout . -f
 git pull
-time cargo update # <10 mins
-time cargo build --release # ?? mins (Fleming T?)
+time cargo build --release
 
 # Copy Safe Node into place
 mkdir -p $SAFE_NODE_DIR
