@@ -7,7 +7,11 @@ source $HOME/.cargo/env # If not rebooted since installing Rustc
 
 rm -rf $HOME/.safe
 
-cd $SAFE_SCRIPTS_DIR/sn_api
+# Update build tools
+rustup update
+
+echo cd $SAFE_SCRIPTS_DIR/sn_cli
+cd $SAFE_SCRIPTS_DIR/sn_cli
 git checkout . -f
 git pull
 time cargo build --release
@@ -28,7 +32,7 @@ $SAFE_CLI networks check
 
 # Build SAFE node:  on Odroid-U3+, Ubuntu 16.04 LTS / 18.04 LTS
 source $HOME/.cargo/env # If not rebooted since installing Rustc
-cd $SAFE_SCRIPTS_DIR/sn_node
+cd $SAFE_SCRIPTS_DIR/safe_network
 git checkout . -f
 git pull
 time cargo build --release

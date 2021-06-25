@@ -11,6 +11,6 @@ export SAFE_CLI=$SAFE_CLI_DIR/safe
 
 export SAFE_CLI_BUILD=$PWD/sn_api/target/release/safe
 export SAFE_AUTHD_BUILD=$PWD/sn_api/target/release/sn_authd
-export SAFE_NODE_BUILD=$PWD/sn_node/target/release/sn_node
+export SAFE_NODE_BUILD=$PWD/safe_network/target/release/sn_node
 
 #env | grep SAFE_
